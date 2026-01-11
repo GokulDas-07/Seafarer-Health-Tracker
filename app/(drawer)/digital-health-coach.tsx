@@ -38,12 +38,12 @@ export default function DigitalHealthCoach() {
 
             {/* Page Header */}
             <View style={styles.header}>
-                <View style={styles.headerIconBox}>
+                {/* <View style={styles.headerIconBox}>
                     <MaterialCommunityIcons name="medical-bag" size={28} color="#FFF" />
                 </View>
                 <View style={styles.headerTextBox}>
                     <Text style={styles.headerTitle}>Digital Health Coach</Text>
-                </View>
+                </View> */}
             </View>
 
             <Text style={styles.headerDescription}>

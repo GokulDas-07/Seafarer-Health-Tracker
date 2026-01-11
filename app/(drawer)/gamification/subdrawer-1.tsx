@@ -9,12 +9,12 @@ export default function SubDrawer1() {
         
         {/* Header Section */}
         <View style={styles.header}>
-          <View style={styles.iconContainer}>
+          {/* <View style={styles.iconContainer}>
             <MaterialCommunityIcons name="gamepad-variant" size={24} color="#008080" />
           </View>
           <View style={styles.headerTextContainer}>
             <Text style={styles.headerTitle}>Health Gamification & Achievements</Text>
-          </View>
+          </View> */}
         </View>
         
         <Text style={styles.description}>

@@ -83,13 +83,13 @@ export default function SubDrawer2() {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                {/* <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
                     <Ionicons name="chevron-back" size={24} color="#000" />
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Daily Goals Progress</Text>
                 <TouchableOpacity>
                     <MaterialCommunityIcons name="dots-vertical" size={24} color="#000" />
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 20,
-        paddingTop: 50, // SafeArea spacing
+        // paddingTop: 50, // SafeArea spacing
         paddingBottom: 20,
     },
     backButton: {

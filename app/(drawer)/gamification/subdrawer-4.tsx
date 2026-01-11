@@ -64,7 +64,7 @@ export default function SubDrawer4() {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                {/* <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
                     <Ionicons name="chevron-back" size={24} color="#000" />
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Weekly Progress</Text>
@@ -77,7 +77,7 @@ export default function SubDrawer4() {
                             <Ionicons name="person" size={16} color="#FFF" />
                         </View>
                     </TouchableOpacity>
-                </View>
+                </View> */}
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 20,
-        paddingTop: 50,
+        // paddingTop: 10,
         paddingBottom: 20,
     },
     backButton: {

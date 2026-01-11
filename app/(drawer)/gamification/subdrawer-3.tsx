@@ -1,4 +1,4 @@
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
@@ -10,7 +10,7 @@ export default function SubDrawer3() {
 
                 {/* Header */}
                 <View style={styles.header}>
-                    <View style={styles.headerLeft}>
+                    {/* <View style={styles.headerLeft}>
                         <View style={styles.trophyIconCircle}>
                             <Ionicons name="trophy" size={20} color="#FFA000" />
                         </View>
@@ -18,13 +18,14 @@ export default function SubDrawer3() {
                     </View>
                     <View style={styles.profileCircle}>
                         <Ionicons name="person" size={16} color="#555" />
-                    </View>
+                    </View> */}
                 </View>
 
                 {/* Recent Awards */}
                 <View style={styles.sectionHeaderRow}>
-                    <Text style={styles.sectionTitle}>RECENT AWARDS</Text>
-                    <Text style={styles.viewAllText}>View All</Text>
+                    {/* <MaterialCommunityIcons name="heart-pulse" size={16} color="#EF5350" /> */}
+                    <Text style={styles.sectionTitle}>GOAL COMPLETION BADGES</Text>
+                    {/* <Text style={styles.viewAllText}>View All</Text> */}
                 </View>
 
                 <View style={styles.awardsGrid}>
@@ -37,7 +38,7 @@ export default function SubDrawer3() {
                             <Ionicons name="checkmark-circle" size={16} color="#81C784" />
                         </View>
                         <Text style={styles.awardTitle}>Steps Champ</Text>
-                        <Text style={styles.awardDate}>Oct 12, 2023</Text>
+                        <Text style={styles.awardDate}>Steps Goal</Text>
                     </View>
 
                     {/* Sleep Master */}
@@ -46,22 +47,22 @@ export default function SubDrawer3() {
                             <Ionicons name="moon" size={20} color="#3F51B5" />
                         </View>
                         <View style={styles.statusIcon}>
-                            <Ionicons name="checkmark-circle" size={16} color="#9FA8DA" />
+                            <Ionicons name="checkmark-circle" size={16} color="#3F51B5" />
                         </View>
                         <Text style={styles.awardTitle}>Sleep Master</Text>
-                        <Text style={styles.awardDate}>Oct 10, 2023</Text>
+                        <Text style={styles.awardDate}>Sleep Goal</Text>
                     </View>
 
                     {/* Health Star */}
                     <View style={styles.awardCard}>
                         <View style={[styles.awardIconCircle, { backgroundColor: '#FFF8E1' }]}>
-                            <Ionicons name="star" size={20} color="#FFB300" />
+                            <MaterialIcons name="balance" size={20} color="#FFB300" />
                         </View>
                         <View style={styles.statusIcon}>
                             <Ionicons name="checkmark-circle" size={16} color="#FFD54F" />
                         </View>
-                        <Text style={styles.awardTitle}>Health Star</Text>
-                        <Text style={styles.awardDate}>Sep 28, 2023</Text>
+                        <Text style={styles.awardTitle}>Balance Master</Text>
+                        <Text style={styles.awardDate}>Work-Life Balance</Text>
                     </View>
 
                     {/* Heart Hero - Locked */}
@@ -122,47 +123,89 @@ export default function SubDrawer3() {
                 <Text style={[styles.sectionTitle, { marginTop: 24, marginBottom: 12 }]}>MILESTONES</Text>
 
                 <View style={styles.milestonesContainer}>
-                    <View style={styles.milestonesLeftCol}>
+                    {/* <View style={styles.milestonesLeftCol}> */}
                         {/* Beginner */}
-                        <View style={styles.milestoneSmallCard}>
-                            <Text style={[styles.milestoneLabel, { color: '#00C853' }]}>SPROUT</Text>
+                       {/*  <View style={styles.milestoneSmallCard}>
+                            <Ionicons name="star" size={18} color="#2979FF" style={{ marginBottom: 4 }} />
                             <Text style={styles.milestoneName}>Beginner</Text>
                             <Ionicons name="checkmark" size={12} color="#00C853" />
-                        </View>
+                        </View> */}
 
                         {/* Rising Star */}
-                        <View style={[styles.milestoneSmallCard, { backgroundColor: '#E3F2FD' }]}>
+                        {/* <View style={styles.milestoneSmallCard}>
                             <Ionicons name="star" size={18} color="#2979FF" style={{ marginBottom: 4 }} />
                             <Text style={styles.milestoneName}>Rising Star</Text>
                             <Ionicons name="checkmark" size={12} color="#2979FF" />
-                        </View>
+                        </View> */}
 
                         {/* Champ (Locked) */}
-                        <View style={[styles.milestoneSmallCard, styles.lockedCard]}>
+                        {/* <View style={[styles.milestoneSmallCard, styles.lockedCard]}>
                             <MaterialCommunityIcons name="trophy" size={18} color="#BDBDBD" style={{ marginBottom: 4 }} />
                             <Text style={[styles.milestoneName, { color: '#9E9E9E' }]}>Champ</Text>
                             <Ionicons name="lock-closed" size={10} color="#BDBDBD" />
-                        </View>
+                        </View> */}
 
                         {/* Legend (Locked) */}
-                        <View style={[styles.milestoneSmallCard, styles.lockedCard]}>
+                        {/* <View style={[styles.milestoneSmallCard, styles.lockedCard]}>
                             <MaterialCommunityIcons name="medal" size={18} color="#BDBDBD" style={{ marginBottom: 4 }} />
                             <Text style={[styles.milestoneName, { color: '#9E9E9E' }]}>Legend</Text>
                             <Ionicons name="lock-closed" size={10} color="#BDBDBD" />
                         </View>
-                    </View>
+                    </View> */}
 
                     {/* Featured Milestone: Health Warrior */}
-                    <View style={styles.milestoneFeaturedCard}>
-                        <MaterialCommunityIcons name="sword-cross" size={48} color="#FFA000" style={{ marginBottom: 16 }} />
-                        <Text style={styles.featuredTitle}>Health Warrior</Text>
-                        <Text style={styles.featuredSubtitle}>200 pts earned</Text>
+                    <ScrollView horizontal={true}>
+                    <View style={[styles.milestoneFeaturedCard, {backgroundColor: '#c4f4c6ff',borderColor: '#abfaaeff'}]}>
+                        <MaterialIcons name="eco" size={48} color="#00ff44ff" style={{ marginBottom: 16 }} />
+                        <Text style={styles.featuredTitle}>Beginner</Text>
+                        <Text style={styles.featuredSubtitle}>Start your journey</Text>
 
                         <View style={styles.achievedBadge}>
                             <Ionicons name="checkmark" size={12} color="#FFF" style={{ marginRight: 4 }} />
                             <Text style={styles.achievedText}>Achieved</Text>
                         </View>
                     </View>
+                    <View style={styles.milestoneFeaturedCard}>
+                        <MaterialCommunityIcons name="sword-cross" size={48} color="#15e24cff" style={{ marginBottom: 16 }} />
+                        <Text style={styles.featuredTitle}>Rising Star</Text>
+                        <Text style={styles.featuredSubtitle}>Earn 100+ pts</Text>
+
+                        <View style={styles.achievedBadge}>
+                            <Ionicons name="checkmark" size={12} color="#FFF" style={{ marginRight: 4 }} />
+                            <Text style={styles.achievedText}>Achieved</Text>
+                        </View>
+                    </View>
+                    <View style={[styles.milestoneFeaturedCard, {backgroundColor: '#F6F1E6',borderColor: '#FFE0B2'}]}>
+                        <MaterialCommunityIcons name="sword-cross" size={48} color="#FFA000" style={{ marginBottom: 16 }} />
+                        <Text style={styles.featuredTitle}>Health Warrior</Text>
+                        <Text style={styles.featuredSubtitle}>Earn 200+ pts</Text>
+
+                        <View style={styles.achievedBadge}>
+                            <Ionicons name="checkmark" size={12} color="#FFF" style={{ marginRight: 4 }} />
+                            <Text style={styles.achievedText}>Achieved</Text>
+                        </View>
+                    </View>
+                    <View style={styles.milestoneFeaturedCard}>
+                        <MaterialCommunityIcons name="sword-cross" size={48} color="#FFA000" style={{ marginBottom: 16 }} />
+                        <Text style={styles.featuredTitle}>Champion</Text>
+                        <Text style={styles.featuredSubtitle}>Earn 250+ pts</Text>
+
+                        <View style={styles.achievedBadge}>
+                            <Ionicons name="checkmark" size={12} color="#FFF" style={{ marginRight: 4 }} />
+                            <Text style={styles.achievedText}>Achieved</Text>
+                        </View>
+                    </View>
+                    <View style={styles.milestoneFeaturedCard}>
+                        <MaterialCommunityIcons name="sword-cross" size={48} color="#FFA000" style={{ marginBottom: 16 }} />
+                        <Text style={styles.featuredTitle}>Legend</Text>
+                        <Text style={styles.featuredSubtitle}>Earn 300+ pts</Text>
+
+                        <View style={styles.achievedBadge}>
+                            <Ionicons name="checkmark" size={12} color="#FFF" style={{ marginRight: 4 }} />
+                            <Text style={styles.achievedText}>Achieved</Text>
+                        </View>
+                    </View>
+                    </ScrollView>
                 </View>
 
             </ScrollView>
@@ -201,7 +244,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: 20,
-        marginTop: 20,
+        // marginTop: 20,
     },
     headerLeft: {
         flexDirection: 'row',
@@ -235,12 +278,13 @@ const styles = StyleSheet.create({
     },
     sectionHeaderRow: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        // justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: 12,
+        gap: 6
     },
     sectionTitle: {
-        fontSize: 12,
+        fontSize: 14,
         fontWeight: 'bold',
         color: '#455A64',
         letterSpacing: 0.5,
@@ -404,14 +448,16 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     milestoneFeaturedCard: {
-        width: '48%',
-        backgroundColor: '#F6F1E6', // Beige/Gold-ish light
+        // width: '48%',
+        width: 150,
+        // backgroundColor: '#F6F1E6', // Beige/Gold-ish light
         borderRadius: 16,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 16,
         borderWidth: 1,
-        borderColor: '#FFE0B2',
+        // borderColor: '#FFE0B2',
+        marginRight: 10,
     },
     featuredTitle: {
         fontSize: 16,
