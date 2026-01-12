@@ -95,28 +95,28 @@ export default function Layout() {
                 <Drawer.Screen
                     name="gamification/subdrawer-1"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
+                        drawerItemStyle: { display: 'none' },
                         title: 'Dashboard',
                     }}
                 />
                 <Drawer.Screen
                     name="gamification/subdrawer-2"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
+                        drawerItemStyle: { display: 'none' }, 
                         title: 'Daily Goals Progress',
                     }}
                 />
                 <Drawer.Screen
                     name="gamification/subdrawer-3"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
+                        drawerItemStyle: { display: 'none' }, 
                         title: 'Badges & Achievements',
                     }}
                 />
                 <Drawer.Screen
                     name="gamification/subdrawer-4"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
+                        drawerItemStyle: { display: 'none' }, 
                         title: 'Weekly Progress',
                     }}
                 />

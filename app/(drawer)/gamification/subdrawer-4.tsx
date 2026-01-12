@@ -115,7 +115,7 @@ export default function SubDrawer4() {
                 {/* Weekly Summary */}
                 <Text style={styles.sectionHeaderTitle}>WEEKLY SUMMARY</Text>
 
-                <View style={styles.summaryGrid}>
+                <View style={[styles.summaryGrid, { marginTop: 12 }]}>
                     {/* Total Goals */}
                     <View style={styles.summaryCard}>
                         <Text style={styles.summaryLabel}>Total Goals</Text>
