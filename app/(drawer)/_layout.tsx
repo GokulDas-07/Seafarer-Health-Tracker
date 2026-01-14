@@ -1,4 +1,4 @@
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons, MaterialIcons, Octicons } from '@expo/vector-icons';
 import { DrawerContentScrollView, DrawerItem, DrawerItemList } from '@react-navigation/drawer';
 import { useRouter } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
@@ -23,7 +23,7 @@ function CustomDrawerContent(props: any) {
                     onPress={() => setIsGamificationExpanded(!isGamificationExpanded)}
                 >
                     <View style={styles.expandableHeaderContent}>
-                        <MaterialCommunityIcons name="trophy-outline" size={24} color={isGamificationExpanded ? "#008080" : "#666"} />
+                        <Ionicons name="game-controller-outline" size={24} color={isGamificationExpanded ? "#008080" : "#666"} />
                         <Text style={[styles.expandableLabel, isGamificationExpanded && styles.activeLabel]}>Gamification</Text>
                     </View>
                     <Ionicons
@@ -36,31 +36,31 @@ function CustomDrawerContent(props: any) {
                 {isGamificationExpanded && (
                     <View style={styles.subMenuContainer}>
                         <DrawerItem
-                            label="Subdrawer 1"
+                            label="Dashboard"
                             focused={pathname === '/gamification/subdrawer-1'}
                             activeTintColor="#008080"
-                            icon={({ color, size }) => <Ionicons name="game-controller-outline" size={size} color={color} />}
+                            icon={({ color, size }) => <MaterialIcons name="dashboard" size={size} color={color} />}
                             onPress={() => router.push('/(drawer)/gamification/subdrawer-1')}
                         />
                         <DrawerItem
-                            label="Subdrawer 2"
+                            label="Daily Goals Progress"
                             focused={pathname === '/gamification/subdrawer-2'}
                             activeTintColor="#008080"
-                            icon={({ color, size }) => <Ionicons name="trophy-outline" size={size} color={color} />}
+                            icon={({ color, size }) => <Octicons name="goal" size={size} color={color} />}
                             onPress={() => router.push('/(drawer)/gamification/subdrawer-2')}
                         />
                         <DrawerItem
-                            label="Subdrawer 3"
+                            label="Badges & Achievements"
                             focused={pathname === '/gamification/subdrawer-3'}
                             activeTintColor="#008080"
                             icon={({ color, size }) => <Ionicons name="medal-outline" size={size} color={color} />}
                             onPress={() => router.push('/(drawer)/gamification/subdrawer-3')}
                         />
                         <DrawerItem
-                            label="Subdrawer 4"
+                            label="Weekly Progress"
                             focused={pathname === '/gamification/subdrawer-4'}
                             activeTintColor="#008080"
-                            icon={({ color, size }) => <Ionicons name="star-outline" size={size} color={color} />}
+                            icon={({ color, size }) => <Ionicons name="trending-up" size={size} color={color} />}
                             onPress={() => router.push('/(drawer)/gamification/subdrawer-4')}
                         />
                     </View>
@@ -95,29 +95,29 @@ export default function Layout() {
                 <Drawer.Screen
                     name="gamification/subdrawer-1"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
-                        title: 'Subdrawer 1',
+                        drawerItemStyle: { display: 'none' },
+                        title: 'Dashboard',
                     }}
                 />
                 <Drawer.Screen
                     name="gamification/subdrawer-2"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
-                        title: 'Subdrawer 2',
+                        drawerItemStyle: { display: 'none' }, 
+                        title: 'Daily Goals Progress',
                     }}
                 />
                 <Drawer.Screen
                     name="gamification/subdrawer-3"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
-                        title: 'Subdrawer 3',
+                        drawerItemStyle: { display: 'none' }, 
+                        title: 'Badges & Achievements',
                     }}
                 />
                 <Drawer.Screen
                     name="gamification/subdrawer-4"
                     options={{
-                        drawerItemStyle: { display: 'none' }, // Hide from default list
-                        title: 'Subdrawer 4',
+                        drawerItemStyle: { display: 'none' }, 
+                        title: 'Weekly Progress',
                     }}
                 />
             </Drawer>
